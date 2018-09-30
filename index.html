@@ -14,21 +14,51 @@
     <link 
         rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.2/fullpage.css" integrity="sha256-9F8EW3cD9kJEEvTeWIoO9R1Yf0xWV8I98FZvSHUPrAI=" crossorigin="anonymous" />
 
+
+    <style>
+        body {
+            background-image: url(images/brick-background.png);
+            color: #333;
+        }
+
+        h1 {
+            font-size: 5em;
+        }
+
+        h3 {
+            font-size: 2em;
+        }
+
+        p {
+            font-size: 2em;
+        }
+
+        .section {
+            text-align: center;
+        }
+
+    </style>
 </head>
 <body>
     <div id="fullpage">
-        <div class="section">Main</div>
+        <div class="section">
+            <img src="https://via.placeholder.com/500x350">
+            <h1>Alec and Shelby</h1>
+            <h3>Saturday, January 5th, 2019</h3>
+            <h3>Old Woolen Mill, Cleveland, TN</h3>
+        </div>
         <div class="section">RSVP</div>
         <div class="section">Gallery</div>
         <div class="section">Registries</div>
     </div>
+
 
     <script 
         src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.2/fullpage.js" integrity="sha256-EiCmSFmFAXsxVM9CAGPTzHtrXdWVvY8rj+IM52SU5xU=" crossorigin="anonymous"></script>
     
     <script type="text/javascript">
         var myFullpage = new fullpage('#fullpage', {
-            sectionsColor: ['#8C0027', '#8C0027', '#8C0027', '#8C0027'], // #86A885 for sage (#9AA98A from google), (#FEF6DC for ivory from google), (#8C0027 for burgundy from google)
+            sectionsColor: ['rgba(220, 223, 202, 0.6)', 'rgba(220, 223, 202, 0.6)', 'rgba(220, 223, 202, 0.6)', 'rgba(220, 223, 202, 0.6)'], // #86A885 for sage (#9AA98A from google), (#FEF6DC for ivory from google), (#8C0027 for burgundy from google)
             anchors: ['1', '2', '3', '4'],
             menu: '#menu',
             scrollingSpeed: 800,
@@ -43,6 +73,7 @@
             responsiveHeight: 600,
             responsiveSlides: true,
             responsiveSlidesKey: 'YWx2YXJvdHJpZ28uY29tX3RoVWNtVnpjRzl1YzJsMlpWTnNhV1JsY3c9PUVZdg==',
+            verticalCentered: true,
             afterResponsive: function(isResponsive){
 
             }
