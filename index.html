@@ -16,7 +16,7 @@
 
 
     <style>
-        body {
+        #headerSection {
             background-image: url(images/brick-background.jpg);
             color: #333;
         }
@@ -45,8 +45,8 @@
 </head>
 <body>
     <div id="fullpage">
-        <div class="section">
-            <img src="https://via.placeholder.com/500x350">
+        <div class="section" id="headerSection">
+            <img src="images/alec-and-shelby.jpeg">
             <h1>Alec and Shelby</h1>
             <h3>Saturday, January 5th, 2019</h3>
             <h3>Old Woolen Mill, Cleveland, TN</h3>
@@ -73,8 +73,9 @@
     
     <script type="text/javascript">
         var myFullpage = new fullpage('#fullpage', {
-            anchors: ['1', '2', '3', '4'],
-            menu: '#menu',
+            anchors: ['1'],
+            autoScrolling: false,
+            fitToSection: false,
             scrollingSpeed: 800,
             continuousVertical: true,
             navigation: true,
